@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200728 19:28:19.996" rpa="false">
+<suite id="s1" name="RobotFramework" source="C:\Users\Hi\git\Hongnhung_Project\RobotFramework">
+<suite id="s1-s1" name="Test" source="C:\Users\Hi\git\Hongnhung_Project\RobotFramework\test">
+<suite id="s1-s1-s1" name="Testsuite1" source="C:\Users\Hi\git\Hongnhung_Project\RobotFramework\test\Testsuite1.robot">
+<test id="s1-s1-s1-t1" name="Login Success Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:28:20.239" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:28:20.238" endtime="20200728 19:28:23.311"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:28:23.312" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:28:23.312" endtime="20200728 19:28:24.252"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:28:24.253" endtime="20200728 19:28:24.254"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>hoanggnhungg99@gmail.com</arg>
+</arguments>
+<msg timestamp="20200728 19:28:24.255" level="INFO">Typing text 'hoanggnhungg99@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200728 19:28:24.254" endtime="20200728 19:28:24.379"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:28:25.382" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:28:24.379" endtime="20200728 19:28:25.382"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20200728 19:28:25.383" level="INFO">Typing text '123' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200728 19:28:25.383" endtime="20200728 19:28:25.485"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:28:26.489" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:28:25.486" endtime="20200728 19:28:26.489"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:28:26.489" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:28:26.489" endtime="20200728 19:28:26.637"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgS</arg>
+<arg>Login Successfully</arg>
+</arguments>
+<msg timestamp="20200728 19:28:26.638" level="INFO">Verifying element 'id=msgS' contains exact text 'Login Successfully'.</msg>
+<status status="PASS" starttime="20200728 19:28:26.638" endtime="20200728 19:28:26.666"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:28:28.670" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:28:26.667" endtime="20200728 19:28:28.670"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:28:28.670" endtime="20200728 19:28:30.769"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:28:30.770" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:28:30.769" endtime="20200728 19:28:30.770"></status>
+</kw>
+<doc>This is login test login success</doc>
+<tags>
+<tag>Login Success</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:28:20.238" endtime="20200728 19:28:30.770" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Validate Email Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:28:30.771" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:28:30.771" endtime="20200728 19:28:33.832"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:28:33.833" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:28:33.833" endtime="20200728 19:28:34.070"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:28:34.070" endtime="20200728 19:28:34.075"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>hoanggnhungg999@gmail.com</arg>
+</arguments>
+<msg timestamp="20200728 19:28:34.076" level="INFO">Typing text 'hoanggnhungg999@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200728 19:28:34.075" endtime="20200728 19:28:34.210"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:28:35.211" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:28:34.210" endtime="20200728 19:28:35.211"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20200728 19:28:35.212" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20200728 19:28:35.248" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200728 19:28:35.288" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200728 19:28:35.211" endtime="20200728 19:28:35.288"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:28:36.290" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:28:35.288" endtime="20200728 19:28:36.290"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:28:36.291" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:28:36.291" endtime="20200728 19:28:36.430"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgE</arg>
+<arg>Please enter a valid email</arg>
+</arguments>
+<msg timestamp="20200728 19:28:36.432" level="INFO">Verifying element 'id=msgE' contains exact text 'Please enter a valid email'.</msg>
+<status status="PASS" starttime="20200728 19:28:36.431" endtime="20200728 19:28:36.468"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:28:38.472" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:28:36.469" endtime="20200728 19:28:38.472"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:28:38.472" endtime="20200728 19:28:40.557"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:28:40.558" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:28:40.557" endtime="20200728 19:28:40.558"></status>
+</kw>
+<doc>This is login test validate email</doc>
+<tags>
+<tag>Login Fail Email by Email</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:28:30.770" endtime="20200728 19:28:40.558" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="Validate Password Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:28:40.560" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:28:40.560" endtime="20200728 19:28:43.575"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:28:43.576" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:28:43.575" endtime="20200728 19:28:43.807"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:28:43.808" endtime="20200728 19:28:43.812"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>hoanggnhungg99@gmail.com</arg>
+</arguments>
+<msg timestamp="20200728 19:28:43.813" level="INFO">Typing text 'hoanggnhungg99@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200728 19:28:43.812" endtime="20200728 19:28:43.938"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:28:44.941" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:28:43.939" endtime="20200728 19:28:44.941"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200728 19:28:44.942" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20200728 19:28:44.979" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200728 19:28:45.023" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200728 19:28:44.941" endtime="20200728 19:28:45.024"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:28:47.026" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:28:45.024" endtime="20200728 19:28:47.026"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:28:47.027" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:28:47.026" endtime="20200728 19:28:47.163"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgP</arg>
+<arg>Please enter a valid password</arg>
+</arguments>
+<msg timestamp="20200728 19:28:47.164" level="INFO">Verifying element 'id=msgP' contains exact text 'Please enter a valid password'.</msg>
+<status status="PASS" starttime="20200728 19:28:47.164" endtime="20200728 19:28:47.192"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:28:49.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:28:47.192" endtime="20200728 19:28:49.195"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:28:49.195" endtime="20200728 19:28:51.281"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:28:51.282" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:28:51.282" endtime="20200728 19:28:51.282"></status>
+</kw>
+<doc>This is login test validate password</doc>
+<tags>
+<tag>Login Fail Email by Password</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:28:40.559" endtime="20200728 19:28:51.283" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="Email and Password is empty Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:28:51.284" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:28:51.284" endtime="20200728 19:28:54.334"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:28:54.335" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:28:54.334" endtime="20200728 19:28:54.581"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:28:54.581" endtime="20200728 19:28:54.586"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:28:56.588" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:28:54.587" endtime="20200728 19:28:56.588"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:28:56.589" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:28:56.589" endtime="20200728 19:28:56.651"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgE</arg>
+<arg>Email is Mandatory Field</arg>
+</arguments>
+<msg timestamp="20200728 19:28:56.652" level="INFO">Verifying element 'id=msgE' contains exact text 'Email is Mandatory Field'.</msg>
+<status status="PASS" starttime="20200728 19:28:56.651" endtime="20200728 19:28:56.675"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgP</arg>
+<arg>Password is Mandatory Field</arg>
+</arguments>
+<msg timestamp="20200728 19:28:56.676" level="INFO">Verifying element 'id=msgP' contains exact text 'Password is Mandatory Field'.</msg>
+<status status="PASS" starttime="20200728 19:28:56.675" endtime="20200728 19:28:56.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:28:58.699" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:28:56.696" endtime="20200728 19:28:58.699"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:28:58.699" endtime="20200728 19:29:00.787"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:29:00.788" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:29:00.787" endtime="20200728 19:29:00.788"></status>
+</kw>
+<doc>This is login test validate password</doc>
+<tags>
+<tag>Login Fail by Email and Password is empty</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:28:51.283" endtime="20200728 19:29:00.788" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t5" name="Email is empty and Password is not empty Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:29:00.789" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:29:00.789" endtime="20200728 19:29:03.853"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:29:03.854" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:29:03.854" endtime="20200728 19:29:04.112"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:29:04.112" endtime="20200728 19:29:04.124"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200728 19:29:04.125" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20200728 19:29:04.174" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200728 19:29:04.255" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200728 19:29:04.124" endtime="20200728 19:29:04.255"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:29:06.258" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:29:04.255" endtime="20200728 19:29:06.258"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:29:06.259" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:29:06.258" endtime="20200728 19:29:06.315"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgE</arg>
+<arg>Email is Mandatory Field</arg>
+</arguments>
+<msg timestamp="20200728 19:29:06.316" level="INFO">Verifying element 'id=msgE' contains exact text 'Email is Mandatory Field'.</msg>
+<status status="PASS" starttime="20200728 19:29:06.315" endtime="20200728 19:29:06.338"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:29:08.341" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:29:06.339" endtime="20200728 19:29:08.341"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:29:08.342" endtime="20200728 19:29:10.418"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:29:10.419" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:29:10.418" endtime="20200728 19:29:10.419"></status>
+</kw>
+<doc>This is login test validate password</doc>
+<tags>
+<tag>Login Fail by Email is empty</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:29:00.788" endtime="20200728 19:29:10.419" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t6" name="Email is not empty and Password is empty Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:29:10.420" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:29:10.420" endtime="20200728 19:29:13.485"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:29:13.485" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:29:13.485" endtime="20200728 19:29:14.383"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:29:14.383" endtime="20200728 19:29:14.385"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>hoanggnhungg99@gmail.com</arg>
+</arguments>
+<msg timestamp="20200728 19:29:14.386" level="INFO">Typing text 'hoanggnhungg99@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200728 19:29:14.385" endtime="20200728 19:29:14.527"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:29:16.528" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:29:14.527" endtime="20200728 19:29:16.528"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:29:16.529" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:29:16.528" endtime="20200728 19:29:16.588"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>id=msgP</arg>
+<arg>Password is Mandatory Field</arg>
+</arguments>
+<msg timestamp="20200728 19:29:16.588" level="INFO">Verifying element 'id=msgP' contains exact text 'Password is Mandatory Field'.</msg>
+<status status="PASS" starttime="20200728 19:29:16.588" endtime="20200728 19:29:16.610"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:29:18.612" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:29:16.610" endtime="20200728 19:29:18.612"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:29:18.612" endtime="20200728 19:29:20.689"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:29:20.690" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:29:20.689" endtime="20200728 19:29:20.690"></status>
+</kw>
+<doc>This is login test validate password</doc>
+<tags>
+<tag>Login Fail by Password is empty</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:29:10.419" endtime="20200728 19:29:20.690" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t7" name="Remmember me Test">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/Program Files/Python/Scripts/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200728 19:29:20.692" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200728 19:29:20.691" endtime="20200728 19:29:23.749"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20200728 19:29:23.749" level="INFO">Opening url 'http://localhost:8080/account/login'</msg>
+<status status="PASS" starttime="20200728 19:29:23.749" endtime="20200728 19:29:23.990"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200728 19:29:23.990" endtime="20200728 19:29:23.993"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>hoanggnhungg99@gmail.com</arg>
+</arguments>
+<msg timestamp="20200728 19:29:23.993" level="INFO">Typing text 'hoanggnhungg99@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200728 19:29:23.993" endtime="20200728 19:29:24.119"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:29:25.120" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:29:24.119" endtime="20200728 19:29:25.120"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20200728 19:29:25.121" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20200728 19:29:25.158" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200728 19:29:25.195" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200728 19:29:25.121" endtime="20200728 19:29:25.195"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:29:26.197" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:29:25.196" endtime="20200728 19:29:26.197"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//label[@for='customCheck1'])</arg>
+</arguments>
+<msg timestamp="20200728 19:29:26.198" level="INFO">Clicking element 'xpath=(//label[@for='customCheck1'])'.</msg>
+<status status="PASS" starttime="20200728 19:29:26.197" endtime="20200728 19:29:26.243"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:29:28.245" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:29:26.243" endtime="20200728 19:29:28.245"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200728 19:29:28.246" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200728 19:29:28.245" endtime="20200728 19:29:28.381"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200728 19:29:29.383" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200728 19:29:28.381" endtime="20200728 19:29:29.383"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Back login</arg>
+</arguments>
+<msg timestamp="20200728 19:29:29.383" level="INFO">Clicking link 'Back login'.</msg>
+<status status="PASS" starttime="20200728 19:29:29.383" endtime="20200728 19:29:29.490"></status>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>value</arg>
+<arg>hoanggnhungg99@gmail.com</arg>
+</arguments>
+<msg timestamp="20200728 19:29:29.508" level="INFO">Element 'id=email' attribute 'value' contains value 'hoanggnhungg99@gmail.com'.</msg>
+<status status="PASS" starttime="20200728 19:29:29.490" endtime="20200728 19:29:29.509"></status>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>value</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20200728 19:29:29.523" level="INFO">Element 'id=password' attribute 'value' contains value '123'.</msg>
+<status status="PASS" starttime="20200728 19:29:29.509" endtime="20200728 19:29:29.523"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200728 19:29:31.526" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200728 19:29:29.523" endtime="20200728 19:29:31.526"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200728 19:29:31.526" endtime="20200728 19:29:33.612"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Completed</arg>
+</arguments>
+<msg timestamp="20200728 19:29:33.613" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20200728 19:29:33.613" endtime="20200728 19:29:33.613"></status>
+</kw>
+<doc>Login succes and click back to login web, Email and password is save</doc>
+<tags>
+<tag>Remmember me</tag>
+</tags>
+<status status="PASS" starttime="20200728 19:29:20.691" endtime="20200728 19:29:33.614" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200728 19:28:20.047" endtime="20200728 19:29:33.615"></status>
+</suite>
+<status status="PASS" starttime="20200728 19:28:20.044" endtime="20200728 19:29:33.619"></status>
+</suite>
+<status status="PASS" starttime="20200728 19:28:20.024" endtime="20200728 19:29:33.621"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Login Fail by Email and Password is empty</stat>
+<stat pass="1" fail="0">Login Fail by Email is empty</stat>
+<stat pass="1" fail="0">Login Fail by Password is empty</stat>
+<stat pass="1" fail="0">Login Fail Email by Email</stat>
+<stat pass="1" fail="0">Login Fail Email by Password</stat>
+<stat pass="1" fail="0">Login Success</stat>
+<stat pass="1" fail="0">Remmember me</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="7" fail="0" id="s1-s1" name="Test">RobotFramework.Test</stat>
+<stat pass="7" fail="0" id="s1-s1-s1" name="Testsuite1">RobotFramework.Test.Testsuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
